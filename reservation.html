@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation - Restaurant Reservation</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <header>
+        <div class="left">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <a href="profile.html">Profile</a>
+        </div>
+  </header>
+
+  <section id="reservation">
+    <div class="content">
+      <form>
+        <div class="form-group">
+          <label for="reservation-date">Reservation Date:</label>
+          <input type="date" id="reservation-date" name="reservation-date">
+        </div>
+        <div class="form-group">
+          <label for="reservation-time">Reservation Time:</label>
+          <input type="time" id="reservation-time" name="reservation-time">
+        </div>
+        <div class="form-group">
+          <label for="number-of-guests">Number of guests:</label>
+          <input type="number" id="number-of-guests" name="number-of-guests" min="1">
+        </div>
+        <div class="form-group">
+          <label for="reservation-name">Reservation Name:</label>
+          <input type="text" id="reservation-name" name="reservation-name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="phone-number">
+        </div>
+        <div class="form-group">
+          <label>Reservation Setup:</label>
+          <div class="radio-group">
+            <input type="radio" id="indoor" name="reservation-setup" value="indoor">
+            <label for="indoor">Indoor</label>
+            <input type="radio" id="outdoor" name="reservation-setup" value="outdoor">
+            <label for="outdoor">Outdoor</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="special-request">Special Request:</label>
+          <textarea id="special-request" name="special-request"></textarea>
+        </div>
+        <button type="submit">Reserve</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Restaurant Reservation. All rights reserved.</p>
+</footer>
+</body>
+</html>
